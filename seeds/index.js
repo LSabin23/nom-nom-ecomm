@@ -6,6 +6,7 @@ const seedProductTags = require('./product-tag-seeds')
 const sequelize = require('../config/connection')
 
 const seedAll = async () => {
+  // force: true WILL drop tables and recreate them when this is run
   await sequelize.sync({ force: true })
   console.log('\n----- DATABASE SYNCED -----\n')
   await seedCategories()
