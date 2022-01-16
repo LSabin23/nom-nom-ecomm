@@ -5,13 +5,11 @@ const Tag = require('./Tag')
 const ProductTag = require('./ProductTag')
 
 // Products belongsTo Category
-// consider putting this section below Category.hasMany(Product, ...) for deleting
 Product.belongsTo(Category, {
   foreignKey: 'category_id'
 })
 
 // Categories have many Products
-// consider putting this section above Product.belongsTo(Category, ...) for deleting
 Category.hasMany(Product, {
   foreignKey: 'category_id'
 })

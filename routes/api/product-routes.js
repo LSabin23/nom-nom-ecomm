@@ -107,7 +107,6 @@ router.post('/', (req, res) => {
 
 // update product (this route was provided in starter code)
 router.put('/:id', (req, res) => {
-  // update product data
   Product.update(req.body, {
     where: {
       id: req.params.id

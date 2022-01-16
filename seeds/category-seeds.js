@@ -15,6 +15,9 @@ const categoryData = [
   },
   {
     category_name: 'Desserts'
+  },
+  {
+    category_name: 'Garbage'
   }
 ]
 
